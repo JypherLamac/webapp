@@ -1,0 +1,123 @@
+
+      header {
+        background-color: #0d0d0d;
+        padding: 12px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        width: 100%;
+        overflow-x: hidden;
+        gap: 25px; 
+      }
+
+      .left {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center; 
+      }
+
+    .logo {
+      height: 40px;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+      background-color: rgb(26, 26, 26);
+      padding: 6px 10px;
+      border-radius: 20px;
+      width: 350px;
+      flex: 1; 
+      max-width: 600px; 
+      height: 40px;
+    }
+
+    .search-container input {
+      background: none;
+      border: none;
+      outline: none;
+      color: white;
+      flex: 1;
+      padding-left: 10px;
+      font-size: 14px;
+    }
+
+    .search-container i {
+      color: #aaa;
+      font-size: 16px;
+    }
+
+
+    .filter-btn {
+      background-color: transparent;
+      border: none;
+      color: white;
+      margin-left: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .filter-btn:hover {
+      color: rgb(255, 107, 0);
+    }
+    nav {
+  flex-shrink: 0; 
+}
+   nav ul {
+   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+    nav li {
+      cursor: pointer;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    nav li:hover {
+      color: rgb(255, 107, 0);
+    }
+
+    .en-btn {
+      background-color: rgb(252, 105, 0);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      width: 40px;
+      height: 28px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      
+    }
+
+    .lang-btn.alt {
+      background-color: transparent;
+      border: 1px solid rgb(85, 85, 85);
+    }
+
+    .profile {
+      background-color: rgb(26, 26, 26);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .profile i {
+      color: white;
+      font-size: 16px;
+    } 
+    
+  
