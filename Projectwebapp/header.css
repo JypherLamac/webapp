@@ -85,6 +85,8 @@
         font-size: 14px;
         transition: color 0.3s ease;
       }
+
+      /* Keep your orange hover for all nav items */
       nav li:hover {
         color: rgb(255, 107, 0);
       }
