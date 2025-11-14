@@ -539,6 +539,20 @@ z-index: 1;
   }
 }
 
+.learn-more {
+    float: right;              
+    color: orange;            
+    text-decoration: none;     
+    font-weight: 500;         
+    font-size: 14px;
+    margin-top: 5px;          
+    transition: 0.2s ease;
+}
+
+.learn-more:hover {
+    color: #ffb347;
+}
+
 
 
 
