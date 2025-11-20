@@ -171,5 +171,12 @@
   transform: translateY(0);
 }
 
-    
+ nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(255,107,0);
+}   
   
