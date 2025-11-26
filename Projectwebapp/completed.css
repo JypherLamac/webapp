@@ -419,3 +419,9 @@ main {
   font-weight: 500;
  
 }
+
+.watch-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
