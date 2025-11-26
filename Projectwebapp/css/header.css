@@ -1,6 +1,6 @@
 
       header {
-        background-color: #0d0d0d;
+        background-color: rgb(13, 13, 13);
         padding: 12px 30px;
         display: flex;
         align-items: center;
@@ -44,7 +44,7 @@
     }
 
     .search-container i {
-      color: #aaa;
+      color: rgb(170, 170, 170);
       font-size: 16px;
     }
 
@@ -78,51 +78,6 @@
     margin: 0;
     padding: 0;
     }
-/* --- DROPDOWN GENRES MENU --- */
-      nav li {
-        position: relative; /* Needed for dropdown positioning */
-        cursor: pointer;
-        font-size: 14px;
-        transition: color 0.3s ease;
-      }
-
-      /* Keep your orange hover for all nav items */
-      nav li:hover {
-        color: rgb(255, 107, 0);
-      }
-
-      /* Dropdown content (hidden by default) */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        top: 28px; /* just below the nav item */
-        left: 0;
-        background-color: rgb(26, 26, 26);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-        padding: 10px 0;
-        min-width: 140px;
-        z-index: 100;
-      }
-
-      /* Dropdown items */
-      .dropdown-content li {
-        padding: 8px 16px;
-        color: white;
-        white-space: nowrap;
-        transition: background 0.3s ease;
-      }
-
-      /* Hover effect inside dropdown */
-      .dropdown-content li:hover {
-        background-color: rgb(255, 107, 0);
-        color: white;
-      }
-
-      /* Show dropdown on hover */
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
 
     .en-btn {
       background-color: rgb(252, 105, 0);

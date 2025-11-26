@@ -24,8 +24,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-
-  /* smoother gradient blend */
  background: 
   linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, transparent 70%),
   linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, transparent 50%);
@@ -34,7 +32,7 @@ z-index: 1;
 
 .hero * {
   position: relative;
-  z-index: 2; /* keeps text and buttons above the shadow */
+  z-index: 2; 
 }
 
 
@@ -69,7 +67,7 @@ z-index: 1;
 }
 
 .description {
-  color: #ddd;
+  color: rgb(221, 221, 221);
   font-size: 40px;
   margin-bottom: 25px;
   max-width: 600px;
@@ -83,7 +81,7 @@ z-index: 1;
 }
 
 .info1 {
-  background: #1a1a1a;
+  background: rgb(26, 26, 26);
   padding: 15px 25px;
   border-radius: 10px;
   text-align: center;
@@ -91,7 +89,7 @@ z-index: 1;
 }
 
 .info1 h4 {
-  color: #ff7033;
+  color: rgb(255, 112, 51);
   font-size: 0.9rem;
 }
 
@@ -100,21 +98,21 @@ z-index: 1;
   font-weight: bold;
 }
 .watch-now-btn {
-  background-color: #f25c2b; /* Orange color */
+  background-color: rgb(242, 92, 43); 
   color: white;
   font-size: 18px;
   font-weight: bold;
   border: none;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
   padding: 14px 40px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
 
-/* Hover effect */
 .watch-now-btn:hover {
-  background-color: #ff7038;
+  background-color: rgb(255, 112, 56);
   transform: translateY(-2px);
 }
 
@@ -125,7 +123,6 @@ z-index: 1;
 }
 
 
-/* Optional focus/active state */
 .watch-now-btn:active {
   transform: scale(0.98);
 }
@@ -222,9 +219,9 @@ z-index: 1;
 
 .cc {
   display: block;
-  background-color: #3b1e1a;
-  color: #ff6333;
-  border: 2px solid #ff6333;
+  background-color: rgb(59, 30, 26);
+  color: rgb(255, 99, 51);
+  border: 2px solid rgb(255, 99, 51);
   border-radius: 8px;
   padding: 2px 8px;
   font-size: 12px;
@@ -278,15 +275,15 @@ z-index: 1;
 }
 
 .badge.cc {
-  color: #ff6a00;
-  border-color: #ff6a00;
+  color: rgb(255, 106, 0);
+  border-color: rgb(255, 106, 0);
   background-color: rgba(255, 106, 0, 0.15);
   margin: 0;
 }
 
 .badge.mic {
-  color: #00b553;
-  border-color: #00b553;
+  color: rgb(0, 181, 83);
+  border-color: rgb(0, 181, 83);
   background-color: rgba(0, 181, 83, 0.15);
   text-align: center;
   margin: 0;
@@ -366,12 +363,12 @@ z-index: 1;
   font-size: 19px;
   font-weight: 400;
   margin-bottom: 4px;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .info p {
   font-size: 18px;
-  color: #b5b5b5;
+  color: rgb(181, 181, 181);
 }
 
 @media (max-width: 768px) {
@@ -413,11 +410,11 @@ z-index: 1;
 }
 
 .icon {
-  color: #ff6333;
+  color: rgb(255, 99, 51);
 }
 
 .now-btn {
-  background: #ff6333;
+  background: rgb(255, 99, 51);
   border: none;
   color: #fff;
   font-weight: 600;
@@ -438,7 +435,7 @@ z-index: 1;
   position: relative;
   display: flex;
   align-items: flex-start;  
-  background-color: #1b1b1e;
+  background-color: rgb(27, 27, 30);
   border-radius: 10px;
   padding: 12px 16px;
   overflow: hidden;
@@ -464,9 +461,9 @@ z-index: 1;
 .rank {
   position: relative;
   z-index: 2;
-  background: #000;
-  border: 2px solid #3a3a3d;
-  color: #fff;
+  background: rgb(0, 0, 0);
+  border: 2px solid rgb(58, 58, 61);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   width: 50px;
   height: 50px;
@@ -513,18 +510,18 @@ z-index: 1;
 }
 
 .cc1{
-  background: #3a1e1a;
-  color: #ff6333;
-  border: 1px solid #ff6333;
+  background: rgb(58, 30, 26);
+  color: rgb(255, 99, 51);
+  border: 1px solid rgb(255, 99, 51);
   width: 100%;
   text-align: center;
 
 }
 
 .ep1 {
-  background: #0f2918;
-  color: #00ff66;
-  border: 1px solid #00ff66;
+  background: rgb(15, 41, 24);
+  color: rgb(0, 255, 102);
+  border: 1px solid rgb(0, 255, 102);
   width: 50px;
   text-align: center;
 }
@@ -557,7 +554,7 @@ z-index: 1;
 }
 
 .see-more:hover {
-    color: #ffb347;
+    color: rgb(255, 179, 71);
 }
 
 

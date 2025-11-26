@@ -4,192 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime App Clone</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/type.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <Style>
-:root {
-    --color-dark-bg: #101216;
-    --color-dark-surface: #191c20; 
-    --color-text-light: #e0e0e0;
-    --color-accent-orange: #f45b2f; 
-    --color-accent-red: #d11919;
-    --color-accent-green: #38a169;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
-body {
-    background-color: var(--color-dark-bg);
-    color: var(--color-text-light);
-    min-height: 100vh;
-}
-
-
-/* --- 2. Main Content & Headers --- */
-main {
-    padding: 100px 40px;
-  
-}
-
-.header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 20px;
-}
-
-.title {
-    font-size: 1.8em;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.item-count {
-    font-size: 0.8em;
-    color: #888;
-}
-
-/* --- 3. Filter/Sorting Row Styling --- */
-.filter-row {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    align-items: center;
-}
-
-.filter-row select, .search-input-small input {
-    background-color: var(--color-dark-surface);
-    color: var(--color-text-light);
-    border: 1px solid #333;
-    padding: 8px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    appearance: none; /* Hide default dropdown arrow */
-}
-
-.search-input-small {
-    background-color: var(--color-dark-surface);
-    border: 1px solid #333;
-    border-radius: 4px;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-}
-
-.search-input-small input {
-    border: none;
-    padding: 8px 0;
-    width: 150px;
-}
-
-.filter-button {
-    background-color: var(--color-accent-orange);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 15px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-/* --- 4. Anime Tiles Grid Styling --- */
-.anime-grid {
-    display: grid;
-    /* Create 6 columns for the main row of tiles */
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 20px;
-}
-
-.anime-tile {
-    /* Slightly rounded corners for the tile container */
-    border-radius: 8px; 
-    overflow: hidden; 
-    transition: transform 0.2s;
-    cursor: pointer;
-}
-.item-count{
-    font-size: 20px;
-}
-
-.anime-tile:hover {
-    transform: translateY(-5px); /* Subtle lift effect on hover */
-}
-
-.tile-image {
-    width: 100%;
-    padding-top: 133.33%; 
-    background-size: cover;
-    background-position: center;
-    background-color: #333; 
-}
-
-.tile-info {
-    padding: 10px 0 20px;
-}
-
-.tile-info .title {
-    font-size: 0.9em;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Badges for CC, ONA, TV */
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 2px 8px;
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: 8px;
-  border: 1.5px solid;
-  margin-top: 20px;
-}
-
-.badge.cc {
-  color: #ff6a00;
-  border-color: #ff6a00;
-  background-color: rgba(255, 106, 0, 0.15);
-  margin: 0;
-}
-
-.badge.mic {
-  color: #00b553;
-  border-color: #00b553;
-  background-color: rgba(0, 181, 83, 0.15);
-  text-align: center;
-  margin: 0;
-}
-
-.badge i {
-  font-size: 11px;
-}
-
-.episode-count {
-  color: white;
-  font-size: 13px;
-  font-weight: 500;
-}
-.anime-type{
-  font-size: 14px;
-  font-weight: 500;
  
-}
-    </Style>
+
+
 </head>
 
 <body>
@@ -245,39 +69,125 @@ main {
          <div class="continue-watching-grid">
 
 
-    <a href="https://animekai.to/watch/wandance-8j84#ep=1" class="watch-link">
+    <a href="https://animekai.to/watch/ascendants-of-the-nine-suns-er43" class="watch-link">
     <div>
       <div class="watch-item">
        <div class="anime-cover">
-        <img src="latestupdate/l13.png" alt="Gachiakuta">
-         <h3 class="anime-title">Wandance</h3>
+       <img src="nrelease/n1.png">
+         <h3 class="anime-title">Ascendants of the Nine Suns</h3>
        </div>
       </div>
     <div class="badge-container">
 
       <div>   
-      <span class="badge cc">CC 6</span>
-      <span class="badge mic"><i class="fa-solid fa-microphone"></i> 4</span>
+      <span class="badge cc">CC 3</span>
+    
+      <span class="anime-type">ONA</span>
+    </div>
+
+    </div>
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/fatestrange-fake-6y0v" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n2.png">
+         <h3 class="anime-title">Fate/strange Fake</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 3</span>
+      <span class="badge mic"><i class="fa-solid fa-microphone"></i> 1</span>
+   
         </div>
       <span class="anime-type">TV</span>
     </div>
 
     </div>
+
     </a>
 
-    <a href="https://animekai.to/watch/cat-tales-wrwjk#ep=1" class="watch-link">
+    <a href="https://animekai.to/watch/one-piece-dr-choppers-adventure-checkup-the-last-records-that-a-genius-left-behind-l6m1k" class="watch-link">
     <div>
       <div class="watch-item">
        <div class="anime-cover">
-        <img src="latestupdate/l23.png" alt="Gachiakuta">
-         <h3 class="anime-title">Cat Tales</h3>
+        <img src="nrelease/n3.png">
+         <h3 class="anime-title">One Piece: Dr. Chopper's Adventure Checkup</h3>
        </div>
       </div>
     <div class="badge-container">
 
       <div>   
-      <span class="badge cc">CC 5</span>
-   
+      <span class="badge cc">CC 1</span>
+     
+      <span class="episode-count">12</span>
+        </div>
+      <span class="anime-type">SPECIAL</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/tatsuki-fujimoto-17-26-xmw0q" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n4.png">
+         <h3 class="anime-title">Tatsuki Fujimoto 17-26</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 3</span>
+      <span class="episode-count">8</span>
+    
+        </div>
+      <span class="anime-type">ONA</span>
+    </div>
+
+    </div>
+    </a>
+
+
+    <a href="https://animekai.to/watch/martial-universe-6-gnqe3" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n5.png">
+         <h3 class="anime-title">Martial Universe 6</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 1</span>
+      <span class="episode-count">12</span>
+        </div>
+      <span class="anime-type">ONA</span>
+    </div>
+
+    </div>
+    </a>
+
+
+    <a href="https://animekai.to/watch/reborn-as-a-cat-jrp2v" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n6.png">
+         <h3 class="anime-title">Reborn as a Cat</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 4</span>
+      <span class="episode-count">36</span>
         </div>
       <span class="anime-type">ONA</span>
     </div>
@@ -285,96 +195,12 @@ main {
     </div>
 
     </a>
-
-    <a href="https://animekai.to/watch/gachiakuta-l1rl" class="watch-link">
+    <a href="https://animekai.to/watch/so-youre-raising-a-warrior-56ymw" class="watch-link">
     <div>
       <div class="watch-item">
        <div class="anime-cover">
-        <img src="latestupdate/l133.png" alt="Gachiakuta">
-         <h3 class="anime-title">Gachiakuta</h3>
-       </div>
-      </div>
-    <div class="badge-container">
-
-      <div>   
-      <span class="badge cc">CC 6</span>
-      <span class="badge mic"><i class="fa-solid fa-microphone"></i> 3</span>
-      <span class="episode-count">12</span>
-        </div>
-      <span class="anime-type">TV</span>
-    </div>
-
-    </div>
-    </a>
-
-    <a href="https://animekai.to/watch/koupen-chan-0yvr" class="watch-link">
-    <div>
-      <div class="watch-item">
-       <div class="anime-cover">
-        <img src="latestupdate/l33.png" alt="Gachiakuta">
-         <h3 class="anime-title">Koupen-chan</h3>
-       </div>
-      </div>
-    <div class="badge-container">
-
-      <div>   
-      <span class="badge cc">CC 4</span>
-    
-        </div>
-      <span class="anime-type">TV</span>
-    </div>
-
-    </div>
-    </a>
-
-
-    <a href="https://animekai.to/watch/noble-farmer-season-3-jrp9j#ep=1" class="watch-link">
-    <div>
-      <div class="watch-item">
-       <div class="anime-cover">
-        <img src="latestupdate/l43.png" alt="Gachiakuta">
-         <h3 class="anime-title">Hyakushou Kizoku 3rd Season</h3>
-       </div>
-      </div>
-    <div class="badge-container">
-
-      <div>   
-      <span class="badge cc">CC 6</span>
-      <span class="episode-count">12</span>
-        </div>
-      <span class="anime-type">TV</span>
-    </div>
-
-    </div>
-    </a>
-
-
-    <a href="https://animekai.to/watch/yano-kuns-ordinary-days-44jv#ep=1" class="watch-link">
-    <div>
-      <div class="watch-item">
-       <div class="anime-cover">
-        <img src="latestupdate/l53.png" alt="Gachiakuta">
-         <h3 class="anime-title">Yano-kun's Ordinary Days</h3>
-       </div>
-      </div>
-    <div class="badge-container">
-
-      <div>   
-      <span class="badge cc">CC 7</span>
-      <span class="episode-count">12</span>
-        </div>
-      <span class="anime-type">TV</span>
-    </div>
-
-    </div>
-
-    </a>
-    <a href="https://animekai.to/watch/ninja-vs-gokudo-xjjk" class="watch-link">
-    <div>
-      <div class="watch-item">
-       <div class="anime-cover">
-        <img src="latestupdate/l63.png" alt="Gachiakuta">
-         <h3 class="anime-title">Ninja vs. Gokudo</h3>
+        <img src="nrelease/n7.png">
+         <h3 class="anime-title">So You're Raising a Warrior</h3>
        </div>
       </div>
     <div class="badge-container">
@@ -383,61 +209,59 @@ main {
       <span class="badge cc">CC 6</span>
       <span class="badge mic"><i class="fa-solid fa-microphone"></i> 6</span>
         </div>
-      <span class="anime-type">TV</span>
+      <span class="anime-type">ONA</span>
     </div>
 
     </div>
     </a>
 
-    <a href="https://animekai.to/watch/with-you-our-love-will-make-it-through-76gm#ep=1" class="watch-link">
+    <a href="https://animekai.to/watch/the-man-from-dao-xiang-cun-0jr37#ep=2" class="watch-link">
     <div>
       <div class="watch-item">
        <div class="anime-cover">
-        <img src="latestupdate/l73.png" alt="Gachiakuta">
-         <h3 class="anime-title">With You, Our Love Will Make It Through</h3>
-       </div>
-      </div>
-    <div class="badge-container">
-
-      <div>   
-      <span class="badge cc">CC 5</span>
-      <span class="badge mic"><i class="fa-solid fa-microphone"></i> 3</span>
-      <span class="episode-count">12</span>
-        </div>
-      <span class="anime-type">TV</span>
-    </div>
-
-    </div>
-    </a>
-
-    <a href="https://animekai.to/watch/isekai-quartet3-0jr0w#ep=1" class="watch-link">
-    <div>
-      <div class="watch-item">
-       <div class="anime-cover">
-        <img src="latestupdate/l93.png" alt="Gachiakuta">
-         <h3 class="anime-title">Isekai Quarter3</h3>
+        <img src="nrelease/n8.png">
+         <h3 class="anime-title">The Man From Dao Xiang Cun</h3>
        </div>
       </div>
     <div class="badge-container">
 
       <div>   
       <span class="badge cc">CC 6</span>
-      <span class="badge mic"><i class="fa-solid fa-microphone"></i> 3</span>
-      <span class="episode-count">11</span>
+      <span class="episode-count">12</span>
         </div>
-      <span class="anime-type">TV</span>
+      <span class="anime-type">ONA</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/jujutsu-kaisen-execution-yerxm" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n9.png">
+         <h3 class="anime-title">Jujutsu Kaisen: Execution</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 1</span>
+      
+        </div>
+      <span class="anime-type">MOVIE</span>
     </div>
 
     </div>
     </a>
 
 
-    <a href="https://animekai.to/watch/a-gatherers-adventure-in-isekai-8l8p#ep=1" class="watch-link">
+    <a href="hhttps://animekai.to/watch/disney-twisted-wonderland-7vq6#ep=1" class="watch-link">
     <div>
       <div class="watch-item">
        <div class="anime-cover">
-        <img src="latestupdate/l103.png" alt="Gachiakuta">
-         <h3 class="anime-title">A Gatherer's Adventure in Isekai</h3>
+       <img src="nrelease/n10.png">
+         <h3 class="anime-title">Disney Twisted-Wonderland The Animation</h3>
        </div>
       </div>
     <div class="badge-container">
@@ -454,34 +278,134 @@ main {
     </a>
 
 
-    <a href="https://animekai.to/watch/call-of-the-night-season-2-w6jg#ep=1" class="watch-link">
+    <a href="https://animekai.to/watch/the-lenticulars-gnq23" class="watch-link">
     <div>
       <div class="watch-item">
        <div class="anime-cover">
-        <img src="latestupdate/l113.png" alt="Gachiakuta">
-         <h3 class="anime-title">Call of the Night Season 2</h3>
+       <img src="nrelease/n11.png">
+         <h3 class="anime-title">THE LENTICULARS</h3>
        </div>
       </div>
     <div class="badge-container">
 
       <div>   
       <span class="badge cc">CC </span>
-      <span class="badge mic"><i class="fa-solid fa-microphone"></i> 11</span>
-      <span class="episode-count">12</span>
+      
         </div>
-      <span class="anime-type">TV</span>
+      <span class="anime-type">ONA</span>
     </div>
 
     </div>
 
     </a>
 
-    <a href="https://animekai.to/watch/rock-is-a-ladys-modesty-y4gv#ep=1" class="watch-link">
+    <a href="https://animekai.to/watch/star-wars-visions-volume-3-409v" class="watch-link">
     <div>
       <div class="watch-item">
        <div class="anime-cover">
-        <img src="latestupdate/l123.png" alt="Gachiakuta">
-         <h3 class="anime-title">Rock Is a Lady's Modesty</h3>
+      <img src="nrelease/n12.png">
+         <h3 class="anime-title">Star Wars: Visions Volume 3</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 9</span>
+      <span class="badge mic"><i class="fa-solid fa-microphone"></i> 9</span>
+      <span class="episode-count">12</span>
+        </div>
+      <span class="anime-type">TV</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/divine-manifestation-jrpqv" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n13.png">
+         <h3 class="anime-title">Divine Manifestation</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 7</span>
+  
+      <span class="episode-count">26</span>
+        </div>
+      <span class="anime-type">ONA</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/back-as-immortal-lord-w84g#ep=1" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+        <img src="nrelease/n14.png">
+         <h3 class="anime-title">Back as Immortal Lord</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 6</span>
+  
+      <span class="episode-count">12</span>
+        </div>
+      <span class="anime-type">TV</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/cat-tales-wrwjk#ep=1" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n15.png">
+         <h3 class="anime-title">Cat Tales</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 6</span>
+        </div>
+      <span class="anime-type">ONA</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/one-piece-dr-choppers-adventure-checkup-traitors-masquerade-8re7p" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+        <img src="nrelease/n16.png">
+         <h3 class="anime-title">One Piece: Dr. Chopper's Adventure Checkup</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 1</span>
+        </div>
+      <span class="anime-type">SPECIAL</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/with-you-our-love-will-make-it-through-76gm" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n17.png">
+         <h3 class="anime-title">With You, Our Love Will Make It Through</h3>
        </div>
       </div>
     <div class="badge-container">
@@ -496,7 +420,93 @@ main {
 
     </div>
     </a>
+
+    <a href="https://animekai.to/watch/isekai-quartet3-0jr0w" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+       <img src="nrelease/n18.png">
+         <h3 class="anime-title">Isekai Quartet3</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 7</span>
+      <span class="badge mic"><i class="fa-solid fa-microphone"></i> 5</span>
+      <span class="episode-count">11</span>
+        </div>
+      <span class="anime-type">TV</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/one-punch-man-season-3-ggk4" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+        <img src="nrelease/n19.png">
+         <h3 class="anime-title">One-Punch Man Season 3</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 7</span>
+      <span class="episode-count">12</span>
+        </div>
+      <span class="anime-type">TV</span>
+    </div>
+
+    </div>
+    </a>
+
+    <a href="https://animekai.to/watch/lil-miss-vampire-cant-suck-right-76r0" class="watch-link">
+    <div>
+      <div class="watch-item">
+       <div class="anime-cover">
+        <img src="nrelease/n20.png">
+         <h3 class="anime-title">Li'l Miss Vampire Can't Suck Right</h3>
+       </div>
+      </div>
+    <div class="badge-container">
+
+      <div>   
+      <span class="badge cc">CC 6</span>
+        </div>
+      <span class="anime-type">TV</span>
+    </div>
+
+    </div>
+    </a>
+
+    
   </div>
     </main>
+
+
+      <footer class="footer">
+  <div class="footer-content">
+    <p>Copyright ©AnimeKAI. All Rights Reserved</p>
+    <p>This page does not store any files on its server. All contents are project purposes only.</p>
+
+    <p class="socials">
+      Socials:
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i><a>
+      <a href="#"><i class="fab fa-discord"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    </p>
+
+    <p class="links">
+      Links:
+      <a href="#">animekai</a>,
+      <a href="#">sflix</a>,
+      <a href="#">watch anime</a>
+    </p>
+  </div>
+
+  <img class="footerlog" src="header/logo.png">
+</footer>
 </body>
 </html>

@@ -1,14 +1,14 @@
 .footer {
   width: 100%;
-  background: #000;
-  color: #ccc;
+  background: rgb(0, 0, 0);
+  color: rgb(204, 204, 204);
   padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #333;
+  border-top: 1px solid rgb(51, 51, 51);
   font-family: sans-serif;
-  margin-top: 60px;
+  margin-top: 150px;
 }
 
 .footer-content p {
@@ -17,7 +17,7 @@
 }
 
 .footer a {
-  color: #52aaff;
+  color: rgb(82, 170, 255);
   text-decoration: none;
 }
 
