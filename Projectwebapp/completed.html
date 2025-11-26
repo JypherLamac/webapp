@@ -1,61 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Dropdown Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-  <title>Completed</title>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            min-height: 100vh;
+        }
 
+        header {
+            background-color: #0d0d0d;
+            padding: 12px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            width: 100%;
+            overflow-x: hidden;
+            gap: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        .left {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+        }
 
+        .logo {
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
 
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="section.css">
-  <link rel="stylesheet" href="general.css">
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            background-color: rgb(26, 26, 26);
+            padding: 6px 10px;
+            border-radius: 20px;
+            width: 350px;
+            flex: 1;
+            max-width: 600px;
+            height: 40px;
+            border: 1px solid #333;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-container:hover {
+            border-color: #555;
+        }
+
+        .search-container input {
+            background: none;
+            border: none;
+            outline: none;
+            color: white;
+            flex: 1;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+
+        .search-container i {
+            color: #aaa;
+            font-size: 16px;
+        }
+
+        .filter-btn {
+            background-color: transparent;
+            border: none;
+            color: white;
+            margin-left: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            color: rgb(255, 107, 0);
+            background-color: rgba(255, 107, 0, 0.1);
+        }
+
+        nav {
+            flex-shrink: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- DROPDOWN GENRES MENU --- */
+        nav li {
+            position: relative;
+            cursor: pointer;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        /* Keep your orange hover for all nav items */
+        nav li:hover {
+            color: rgb(255, 107, 0);
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: block;
+            position: absolute;
+            top: 100%; /* Position below the parent */
+            left: 0;
+            background-color: rgb(26, 26, 26);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+            padding: 10px 0;
+            min-width: 180px;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.25s ease;
+        }
+
+        /* Dropdown items */
+        .dropdown-content li {
+            padding: 8px 16px;
+            color: white;
+            white-space: nowrap;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Hover effect inside dropdown */
+        .dropdown-content li:hover {
+            background-color: rgb(255, 107, 0);
+            color: white;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .en-btn {
+            background-color: rgb(252, 105, 0);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            width: 40px;
+            height: 28px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .en-btn:hover {
+            background-color: rgb(255, 130, 50);
+            transform: scale(1.05);
+        }
+
+        .lang-btn.alt {
+            background-color: transparent;
+            border: 1px solid rgb(85, 85, 85);
+        }
+
+        .profile {
+            background-color: rgb(26, 26, 26);
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .profile:hover {
+            background-color: rgb(40, 40, 40);
+            transform: scale(1.05);
+        }
+
+        .profile i {
+            color: white;
+            font-size: 16px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: rgb(255,107,0);
+        }
+
+        /* Demo content */
+        .demo-content {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #0d0d0d;
+            border-radius: 10px;
+        }
+
+        .demo-content h2 {
+            color: rgb(255, 107, 0);
+            margin-bottom: 15px;
+        }
+
+        .demo-content p {
+            line-height: 1.6;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .instructions {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid rgb(255, 107, 0);
+        }
+
+        .instructions h3 {
+            color: rgb(255, 107, 0);
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <div class="left">
+            <a href="index.html">
+                <img class="logo" src="https://via.placeholder.com/150x40/333333/FFFFFF?text=LOGO" alt="Logo">
+            </a>
+        </div>
 
-  <header>
-    <div class="left">
-        <a href="index.html">
-      <img class="logo" src="header/logo.png" alt="Logo">
-</a>
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+            <button class="filter-btn"><i class="fa-solid fa-filter"></i> FILTER</button>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-user-group"></i></li>
+                <li><i class="fa-solid fa-shuffle"></i></li>
+                <li class="dropdown">
+                    GENRES
+                    <ul class="dropdown-content">
+                        <li><i class="fa-solid fa-mask"></i> Action</li>
+                        <li><i class="fa-solid fa-heart"></i> Romance</li>
+                        <li><i class="fa-solid fa-ghost"></i> Horror</li>
+                        <li><i class="fa-solid fa-laugh"></i> Comedy</li>
+                        <li><i class="fa-solid fa-dragon"></i> Fantasy</li>
+                        <li><i class="fa-solid fa-rocket"></i> Sci-Fi</li>
+                        <li><i class="fa-solid fa-user-secret"></i> Mystery</li>
+                        <li><i class="fa-solid fa-graduation-cap"></i> Slice of Life</li>
+                    </ul>
+                </li>
+                <li>TYPES</li>
+                <li><a href="newreleases.html">NEW RELEASES</a></li>
+                <li><a href="upcoming.html">UPCOMING</a></li>
+                <li><a href="completed.html">COMPLETED</a></li>
+                <li><button class="en-btn">en</button></li>
+                <li><div class="profile"><i class="fa-solid fa-user"></i></div></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="demo-content">
+        <h2>Fixed Header with Dropdown Menu</h2>
+        <p>This header now includes a working dropdown menu for the "GENRES" item that functions without JavaScript.</p>
+        <p>Try hovering over the <strong>GENRES</strong> menu item to see the dropdown in action!</p>
+        
+        <div class="instructions">
+            <h3>What was fixed:</h3>
+            <ul>
+                <li>Added proper positioning for the dropdown container</li>
+                <li>Set the dropdown to appear below the parent element using <code>top: 100%</code></li>
+                <li>Ensured the dropdown content is properly structured</li>
+                <li>Maintained smooth transitions for the dropdown appearance</li>
+            </ul>
+        </div>
     </div>
-
-    <div class="search-container">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" placeholder="Search...">
-      <button class="filter-btn"><i class="fa-solid fa-filter"></i> FILTER</button>
-    </div>
-
-    <nav>
-      <ul>
-        <li><i class="fa-solid fa-user-group"></i></li>
-        <li><i class="fa-solid fa-shuffle"></i></li>
-
-       
-        <li>GENRES</li>
-        <li>TYPES</li>
-        <li><a href="newreleases.html">NEW RELEASES</a></li>
-        <li><a href="upcoming.html">UPCOMING</a></li>
-        <li><a href="completed.html">COMPLETED</a></li>
-
-        <li><button class="en-btn">en</button></li>
-        <li><div class="profile"><i class="fa-solid fa-user"></i></div></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="page-content" style="max-width:1700px; margin:150px auto; color:white;">
-    <h1 style="font-size:45px; margin-bottom:20px;">Completed</h1>
-
-    <p style="font-size:20px; opacity:0.7;">more..</p>
-  </section>
-
-
-
 </body>
 </html>

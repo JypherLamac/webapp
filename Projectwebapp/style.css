@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#0b1b2c, #1b1c38);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.new-releases {
+    padding: 40px;
+}
+
+.new-releases h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+    background: #111827;
+    border: 1px solid #374151;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 6px;
+}
+
+.filter-btn {
+    background: #f97316;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #111827;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.tags {
+    font-size: 13px;
+    color: #fbbf24;
+}

@@ -118,6 +118,13 @@ z-index: 1;
   transform: translateY(-2px);
 }
 
+.watch-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+
 /* Optional focus/active state */
 .watch-now-btn:active {
   transform: scale(0.98);
