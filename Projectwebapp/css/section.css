@@ -306,7 +306,11 @@ z-index: 1;
 
 /*  new release  */
 
-
+a {
+  outline: none; 
+  text-decoration: none;
+  color: inherit;
+}
 
 .container {
   display: grid;
@@ -341,6 +345,7 @@ z-index: 1;
   transition: background 0.3s;
   color: #fff;
   cursor: pointer;
+
 }
 
 .card:hover {
@@ -376,9 +381,6 @@ z-index: 1;
     grid-template-columns: 1fr;
   }
 }
-
-
-
 
 
 
